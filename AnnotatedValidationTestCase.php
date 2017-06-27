@@ -26,7 +26,7 @@ abstract class AnnotatedValidationTestCase extends BaseValidationTestCase implem
      */
     public function setUp()
     {
-         $this->validator = Validation::createValidatorBuilder()
+            $this->validator = Validation::createValidatorBuilder()
         ->enableAnnotationMapping()
         ->getValidator();
     }
