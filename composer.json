@@ -1,0 +1,23 @@
+{
+    "name": "symball/validation-test-case",
+    "description": "A PHPUnit test case for simplifying the creation of unit tests which make use of Symfony annotation constraints",
+    "keywords": ["Symfony","PHPUnit","Validation"],
+    "homepage": "https://github.com/symball/validation-test-case",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Ball",
+            "email": "open-source@simonball.me",
+            "homepage": "https://simonball.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Symball\\ValidationTestCase\\": ""
+        }
+    }
+}
