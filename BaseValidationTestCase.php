@@ -38,8 +38,8 @@ abstract class BaseValidationTestCase extends TestCase {
     protected function validate($object)
     {
         // Perform a basic check on the input to be tested
-        if(!is_object($object)) {
-            $this->fail('Can only validate objects, '. gettype($object).' supplied.');
+        if (!is_object($object)) {
+            $this->fail('Can only validate objects, '.gettype($object).' supplied.');
         }
         
         // Set to object for later use and return the result
@@ -56,7 +56,7 @@ abstract class BaseValidationTestCase extends TestCase {
     protected function getField($field)
     {
         foreach ($this->errors as $error) {
-            if($error->getPropertyPath() == $field) {
+            if ($error->getPropertyPath() == $field) {
                 return $error;
             }
         }
